@@ -24,12 +24,18 @@ gulp.task('copy:css', function () {
   .pipe(gulp.dest('assets/css/'));
 });
 
+gulp.task('copy:images', function () {
+  gulp.src('images/**/*')
+  .pipe(gulp.dest('assets/images/'));
+});
+
 gulp.task('default', [
+  'copy:images',
   'copy:css',
   'build:webpack'
 ]);
 
-gulp.task('watch', function () {
+gulp.task('watch', ['default'], function () {
   gulp.watch('src/**/*', ['build:webpack']);
   gulp.watch('css/app.css', ['copy:css']);
 });
