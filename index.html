@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-  <title>Guest House Demo</title>
-  <link href="assets/css/app.css" media="all" rel="stylesheet" type="text/css">
-  <script src="assets/js/app.js"></script>
+<title>Guest House Demo</title>
+<link href="assets/css/app.css" media="all" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <nav class="navbar">
-    <img class="navbar-guesthouse-logo" src="assets/images/Guesthouse-logo.png" alt="Guesthouse logo">
-    <ul class="navbar-list">
-      <li class="navbar-list-element"><a href="/" >Home</a></li>
-      <li class="navbar-list-element"><a href="/login" >Login</a></li>
-      <li class="navbar-list-element"><a href="/register" >Register</a></li>
-    </ul>
-  </nav>
-  <section class="main">
-    <div class="carousel-container">
-      <img src="assets/images/Carousel3.png" alt="Carousel">
+<nav class="navbar">
+  <img class="navbar-guesthouse-logo" src="assets/images/Guesthouse-logo.png" alt="Guesthouse logo">
+  <ul class="navbar-list">
+    <li class="navbar-list-element"><a href="/" >Home</a></li>
+    <li class="navbar-list-element"><a href="/login" >Login</a></li>
+    <li class="navbar-list-element"><a href="/register" >Register</a></li>
+  </ul>
+</nav>
+
+<header class="carousel">
+  <h1 class="carousel-heading">Heading</h1>
+</header>
+
+<section data-route="login" class="main">
+  <form class="form" method="post" action="#">
+    <div class="form-child">
+      <input class="email-input" placeholder="Your email address"/>
     </div>
-    <div class="body-container">
-    hello world
+    <div class="form-child">
+      <input class="password-input" placeholder="Your password"/>
     </div>
-  </section>
-  <footer class="footer">
-    @Guesthouse, Inc.
-  </footer>
+    <div class="button-container">
+      <button class="form-button">Login</button>
+    </div>
+  </form>
+  <p class="reminder">
+  Don't have an account? <a href="/register">Sign up</a>
+  </p>
+</section>
+
+<section data-route="register" class="main">
+  <form class="form" method="post" action="#">
+    <div class="form-child">
+      <input class="name-input" placeholder="Your name"/>
+    </div>
+    <div class="form-child">
+      <input class="email-input" placeholder="Your email address"/>
+    </div>
+    <div class="form-child">
+      <input class="password-input" placeholder="Your password"/>
+    </div>
+    <div class="button-container">
+      <button class="form-button">Sign up</button>
+    </div>
+  </form>
+  <p class="reminder">
+  Got an account already? <a href="/login">Log in</a>
+  </p>
+</section>
+
+<footer class="footer">
+  <p>@Guesthouse, Inc.</p>
+</footer>
+
+<script src="assets/js/app.js"></script>
 </body>
 </html>
