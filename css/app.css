@@ -1,19 +1,38 @@
+* {
+  font-family: Helvetica;
+}
+
 .navbar {
   width: 100%;
   height: 50px;
+  font-size: 14px;
 }
 
 .navbar-guesthouse-logo {
   float: left;
+  padding-left: 240px;
 }
 
 .navbar-list {
   float: right;
+  padding-right: 240px;
   list-style: none;
 }
 
 .navbar-list-element {
   float: left;
+  padding-left: 20px;
+}
+
+.navbar-links {
+  text-decoration: none;
+  color: #111;
+}
+
+.navbar-advertisement {
+  background: rgb(235, 207, 38);
+  padding: 5px 10px 5px 10px;
+  color: #fff;
 }
 
 .carousel {
@@ -25,7 +44,6 @@
 
 .carousel-heading {
   position: absolute;
-  font-family: Helvetica;
   font-size: 48px;
   color: #ffffff;
   text-shadow: 1px 1px 1px #333333;
@@ -41,12 +59,19 @@
 }
 
 .main {
+  padding: 40px 0 40px 0;
   width: 100%;
   background: #eee;
 }
 
 .reminder {
   text-align: center;
+  color: #888;
+}
+
+.reminder-link {
+  text-decoration: none;
+  color: rgb(35,144,190);
 }
 
 .form-child {
@@ -56,8 +81,31 @@
 
 .form-child input {
   width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding-left: 16px;
 }
 
 .button-container {
+  margin-top: 30px;
   text-align: center;
+}
+
+.form-button {
+  height: 40px;
+  background: rgb(35,144,190);
+  padding: 10px 20px 10px 20px;
+  border: 0;
+  color: #eee;
+  font-size: 16px;
+}
+
+.copyright {
+  text-align: center;
+  color: #888;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
