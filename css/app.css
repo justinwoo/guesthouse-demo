@@ -27,6 +27,7 @@
 .navbar-links {
   text-decoration: none;
   color: #111;
+  cursor: pointer;
 }
 
 .navbar-advertisement {

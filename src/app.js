@@ -18,6 +18,8 @@ var handleBeforeRoute = function () {
     var route = $(ele).data('route');
     if (pathname.indexOf(route) === -1) {
       $(ele).hide();
+    } else {
+      $(ele).show();
     }
   });
 };
@@ -35,3 +37,11 @@ router.configure({
 });
 
 router.init();
+
+$('#login-link').click(function () {
+  router.setRoute('/login');
+});
+
+$('#signup-link').click(function () {
+  router.setRoute('/register');
+});
